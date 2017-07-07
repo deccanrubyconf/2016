@@ -10,14 +10,12 @@ permalink: /:year/:month/:day/:title.html
 title:               'DeccanRubyConf 2016'
 tagline:             ''
 description:         ''
-url:                 'http://deccanrubyconf.github.io'
+url:                 'http://2016.deccanrubyconf.org'
 baseurl:
 paginate:            20
 
 # Custom vars
 version:             1.0.0
-
-exclude: ['vendor']
 
 assets:
   js_compressor:  uglifier
@@ -32,3 +30,5 @@ sass:
 # to rebuild site after new changes, before pushing to s3, using s3_website push
 gems:
   - jekyll-paginate
+
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
